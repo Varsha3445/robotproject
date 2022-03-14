@@ -1,3 +1,5 @@
+*** Settings ***
+Library    OperatingSystem
 *** Test Cases ***
 * Test Cases *
 TC1
@@ -10,7 +12,7 @@ TC1
 
 TC2
     Create Directory   E:${/}LTTS${/}robort${/}temp${/}My_Folder
-    Create File    E:${/}LTTS${/}robort${/}temp${/}My_Folder${/}notes.txt     Ambika Chinmalli
-    #copy file
-#    remove file
-#remove directory
+    Create File    E:${/}LTTS${/}robort${/}temp${/}My_Folder${/}notes.txt       varsha
+    Copy File    E:${/}LTTS${/}robort${/}temp${/}My_Folder${/}notes.txt    xyz1
+    Remove File    E:${/}LTTS${/}robort${/}temp${/}My_Folder${/}notes.txt robot
+    Remove Directory    E:${/}LTTS${/}robort${/}temp${/}My_Folder    true
