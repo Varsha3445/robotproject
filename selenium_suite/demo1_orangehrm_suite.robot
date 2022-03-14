@@ -25,7 +25,17 @@ TC2
     Input Text    id=txtUsername    Admin
     Input Password    id=txtPassword    admin123
     Click Element    id=btnLogin
-    Page Should Contain
+    Click Element    id=menu_pim_viewMyDetails
+    Click Element    partial link=Emergency Contacts
+    Click Element    id=btnAddContact
+    Input Text    name=emgcontacts[name]    sat
+    Input Text    id=emgcontacts_relationship    brother
+    Input Text    id=emgcontacts_homePhone    99999999
+    Click Element    id=btnSaveEContact
+
+
+
+
 
 
 
