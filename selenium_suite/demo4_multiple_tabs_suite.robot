@@ -7,10 +7,13 @@ TC1
     Maximize Browser Window
     Set Selenium Implicit Wait    30s
     Go To    url=https://www.db4free.net/
-    Click Element   partiallink=phpMyAdmin
+    Click Element    xpath=//b[contains(text(),'phpMy')]
+    switch Window  phpMyAdmin
     Input Text    id=input_username    admin
-    Input Text    id=input_Password    admin123
+    Input Text    id=input_password    admin123
     Click Element    id=input_go
+    Element should Contain  xpath=//div[contains(text(),'Access')]  Access denied for user
+    Switch Window  MAIN
 
 
 
