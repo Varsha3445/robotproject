@@ -10,6 +10,8 @@ TC1
     Click Element    xpath=//img[@alt='Go']
     ${alert_text}   Handle Alert  action=ACCEPT  timeout=50s
     Log To Console    ${alert_text}
+    Log To Console  ${alert_text}
+    Should Be Equal  ${alert_text}   Customer ID${SPACE}${SPACE}cannot be left blank.
 
 
 TC2
@@ -20,6 +22,6 @@ TC2
 
 
     Click Element    link=Calculate Membership Fee
-    ${alert_text}  Handle Alert   action=ACCEPT  timeout=50s
+    ${alert_text}  Handle Alert   action=ACCEPT
     Log To Console   ${alert_text}
-    Should Be Equal  ${alert_text}    Please enter amount in digit and greater than zero
+    Should Be Equal  ${alert_text}    Please enter amount in digit and greater than zero.
