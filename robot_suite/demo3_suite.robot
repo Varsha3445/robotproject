@@ -16,3 +16,6 @@ TC2
     Copy File    E:${/}LTTS${/}robort${/}temp${/}My_Folder${/}notes.txt    xyz1
     Remove File    E:${/}LTTS${/}robort${/}temp${/}My_Folder${/}notes.txt robot
     Remove Directory    E:${/}LTTS${/}robort${/}temp${/}My_Folder    true
+
+TC3
+
