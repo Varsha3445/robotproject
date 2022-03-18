@@ -9,8 +9,7 @@ TC1
     Maximize Browser Window
     Set Selenium Implicit Wait    20s
     Go To    url=https://www.ilovepdf.com/pdf_to_word
-#    selenium
-#    Choose File    xpath=//input[@type='file']     D:${/}Balaji-Profile.pdf
+
 
     Click Element    xpath=//span[text()='Select PDF file']
     Sleep    1s
