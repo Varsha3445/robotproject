@@ -1,5 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
+Library   AutoRecorder
+
 
 Test Teardown       Close Browser
 

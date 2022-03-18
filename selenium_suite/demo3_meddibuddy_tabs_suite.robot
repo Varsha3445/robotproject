@@ -1,6 +1,7 @@
 *** Settings ***
 Library   SeleniumLibrary
 
+
 *** Test Cases ***
 TC1
     Open Browser     browser=headlesschrome  executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
